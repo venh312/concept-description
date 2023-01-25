@@ -91,7 +91,7 @@
 - 빅데이터 환경 ( Spark , Elasticsearch , Presto , Druid , Hive ) 활용 경험
 - 오픈소스 혹은 개발 커뮤니티 활동
 - AWS 의 다양한 프로덕트 사용 경험
-- Kafka, Kinesis 활용 경험
+- 메시지큐(Kafka) 활용 경험
 - 대용량 어플리케이션 시스템 개발 및 운영
 - JPA, MongoDB, Redis 개발 역량
 - MSA 아키텍처 사용 경험
