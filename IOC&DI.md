@@ -1,10 +1,9 @@
 # 🌈 Spring IOC, Container, DI, Bean?
-스프링을 사용하다 보면 꾸준히 들어오던 용어들이다. 이 장에서는 그 개념에 대해서 알아보고 정리해 본다.
 
 ## IOC (Inversion of Control)
 제어의 역전이라 부른다. 아래에서 컨테이너와 함께 설명한다.
 
-## Container (컨테이너)
+## Container
 컨테이너는 보통 객체의 생명주기, 생성된 인스턴스들에게 추가적인 기능을 제공한다. 스프링 컨테이너는 의존성도 관리한다.
 
 ## Spring IOC Container - 스프링 IOC 컨테이너
