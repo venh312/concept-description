@@ -6,7 +6,7 @@
 
 ## 기술 개념 정리
 ### - [로드밸런싱 (Load Balancing)](https://github.com/conf312/spring/blob/master/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1%20(Load%20Balancing).md)
-### JPA
+### - [JPA](https://github.com/conf312/tech-concept/blob/master/JPA.md)
 ### N+1, 1+N
 ### Session, Token
 ### Maven, Gradle
