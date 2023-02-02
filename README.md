@@ -10,7 +10,7 @@
 ### - [N+1, 1+N](https://github.com/conf312/tech-concept/blob/master/N%2B1.md)
 ### Session, Token
 ### Maven, Gradle
-### OAuth
+### - [OAuth](https://github.com/conf312/tech-concept/blob/master/OAuth.md)
 ### CDN
 ### Filter, Interceptor
 ### AES, DES, SHA
