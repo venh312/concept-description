@@ -3,7 +3,7 @@
 - A 어플리케이션 - L7, FTP, DHCP, HTTP, SMTP, DNS
 - P 표현
 - S 세션
-- T 전송 - TCP, UDP
+- T 전송 - L4, TCP, UDP
 - N 네트워크
 - D 데이터
 - P 물리
