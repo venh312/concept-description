@@ -16,3 +16,6 @@
 ### AES, DES, SHA
 ### SQL Injection
 ### REST API
+### - [DataBase](https://github.com/conf312/tech-concept/blob/master/Database.md)
+### - [Network](https://github.com/conf312/tech-concept/blob/master/Network.md)
+### - [OS](https://github.com/conf312/tech-concept/blob/master/OS.md)
