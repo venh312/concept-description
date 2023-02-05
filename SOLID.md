@@ -36,14 +36,14 @@ abstract class Bike {
 public class TwoWheelBike extends Bike {
 	@Override
 	public void run(int wheel) {
-		// 두 바퀴로 가는 자전거
+	// 두 바퀴로 가는 자전거
 	}
 }
 
 public class TwoWheelBike extends Bike {
 	@Override
 	public void run(int wheel) {
-		// 네 바퀴로 가는 자전거
+	// 네 바퀴로 가는 자전거
 	}
 }
 ```
@@ -57,21 +57,23 @@ public class TwoWheelBike extends Bike {
 ```java
 public class 마티즈 {
 	void 창문조작() {
-		// 수동 창문조작
+	// 수동 창문조작
 	}
     
 	void 기어조작() {
-		// 수동 기어조작
+	// 수동 기어조작
 	}
 }
+```
 
+```java
 public class 쏘나타 {
 	void 창문조작() {
-		// 자동 창문조작
+	// 자동 창문조작
 	}
     
 	void 기어조작() {
-		// 자동 기어조작
+	// 자동 기어조작
 	}
 }
 ```
@@ -82,24 +84,28 @@ public interface 자동차 {
 	void 창문조작();
 	void 기어조작();
 }
+```
 
+```java
 public class 마티즈 implements 자동차 {
 	void 창문조작() {
-		// 수동 창문조작
+	// 수동 창문조작
 	}
     
 	void 기어조작() {
-		// 수동 기어조작
+	// 수동 기어조작	
 	}
 }
+```
 
+```java
 public class 쏘나타 implements 자동차 {
 	void 창문조작() {
-		// 자동 창문조작
+	// 자동 창문조작
 	}
     
 	void 기어조작() {
-		// 자동 기어조작
+	// 자동 기어조작
 	}
 }
 ```
@@ -120,32 +126,40 @@ public class 쏘나타 implements 자동차 {
 public interface 요리 {
 	void cook();
 }
+```
 
+```java
 public interface 운동 {
 	void exercise();
 }
+```
 
+```java
 // 요리와 운동을 하는 철수 구현
 public class 철수 implements 요리, 운동 {
 	@Override
 	public void cook() {
-		// ...
+	// ...
 	}
     
 	@Override
 	public void exercise() {
-		// ...
+	// ...
 	}
 }
+```
 
+```java
 // 요리를 하는 영희 구현
 public class 영희 implements 요리 {
 	@Override
 	public void cook() {
-		// ...
+	// ...
 	}
 }
+```
 
+```java
 public class Main {
 	public static void main(String[] args) {
 		// 운동하는 철수가 필요할 때
