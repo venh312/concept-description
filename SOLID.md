@@ -40,7 +40,7 @@ public class TwoWheelBike extends Bike {
 	}
 }
 
-public class TwoWheelBike extends Bike {
+public class ThreeWheelBike extends Bike {
 	@Override
 	public void run(int wheel) {
 	// 네 바퀴로 가는 자전거
