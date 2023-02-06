@@ -5,7 +5,7 @@
 
 
 ## 기술 개념 정리
-### - [SOLID] (https://github.com/conf312/tech-concept/blob/master/SOLID.md)
+### - [SOLID](https://github.com/conf312/tech-concept/blob/master/SOLID.md)
 ### - [DataBase](https://github.com/conf312/tech-concept/blob/master/Database.md)
 ### - [Network](https://github.com/conf312/tech-concept/blob/master/Network.md)
 ### - [OS](https://github.com/conf312/tech-concept/blob/master/OS.md)
