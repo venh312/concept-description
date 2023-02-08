@@ -5,7 +5,7 @@
 ## 동작 원리
 Bridge/Transparent Mode에서는 사용자가 서버에 서비스를 요청할 때 중간에서 로드밸런서가 NAT를 통해 IP/MAC주소를 변조한다. 즉, 요청과 응답이 모두 Load Balancer를 경유한다.
 
-```NAT: 사설Ip주소를 공인IP 주소로 변경하는 기술```
+```NAT (Network Address Translation – 네트워크 주소 변환): 사설Ip주소를 공인IP 주소로 변경하는 기술```
 
 ## 로드밸런서 (Load Balancer)
 ### 정의
