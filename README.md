@@ -3,7 +3,6 @@
 ### - [AOP (Aspect Oriented Programming)](https://github.com/conf312/spring-triangle/blob/master/AOP.md)
 ### - [PSA (Portable Service Abstraction)](https://github.com/conf312/spring-triangle/blob/master/PSA.md)
 
-
 ## 기술 개념 정리
 ### - [SOLID](https://github.com/conf312/tech-concept/blob/master/SOLID.md)
 ### - [DataBase](https://github.com/conf312/tech-concept/blob/master/Database.md)
