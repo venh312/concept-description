@@ -107,27 +107,27 @@ Jvm 메모리 구조, GC, MySQL 엔진, 인덱스, 클러스터링
 ### Java JVM
 - java -> javac.exe -> bytecode -> class loader -> jvm area -> method area, heap area, stack area, pc register, native area
 
-- • Restful API 설계와 문서화
-- • Git, Jira, Confluence wiki 사용능력
-- • 언어와 환경에 구애 받지 않고 가장 적합한 플랫폼을 기반으로 서비스를 구축할 수 있는 능력
-- • OpenID, OAuth 에 대한 이해
-- • 캐시, 비동기(Kafka , MQ), 동시성, 이벤트 에 대한 이해
-- • 논-블로킹 (non-blocking) I/O 개발 경험
-- • MSA 환경에서의 개발 경험
-- • 빅데이터 환경 ( Spark , Elasticsearch , Presto , Druid , Hive ) 활용 경험.
-- • 오픈소스 혹은 개발 커뮤니티 활동
-- • AWS 의 다양한 프로덕트 사용 경험
-- • Kafka , Kinesis 활용 경험
-- • MSA 아키텍쳐 경험
-- • Mongodb 또는 Mysql 사용 경험자
-- • Java & Spring Framework 기반 백엔드 시스템 개발
-- • 대용량 어플리케이션 시스템 개발 및 운영
-- • Spring Framework, Spring Boot 개발 역량
-- • JPA, MongoDB, Redis 개발 역량
-- • 3년 이상의 실무 개발 경험
-- • 우수한 문서 커뮤니케이션 능력
-- • 강한 자율성과 책임감
-- • 함께 성장하고 배우는 것에 가치를 두는 자세
-- • MSA, Spring Cloud, Redis, MongoDB
+- Restful API 설계와 문서화
+- Git, Jira, Confluence wiki 사용능력
+- 언어와 환경에 구애 받지 않고 가장 적합한 플랫폼을 기반으로 서비스를 구축할 수 있는 능력
+- OpenID, OAuth 에 대한 이해
+- 캐시, 비동기(Kafka , MQ), 동시성, 이벤트 에 대한 이해
+- 논-블로킹 (non-blocking) I/O 개발 경험
+- MSA 환경에서의 개발 경험
+- 빅데이터 환경 ( Spark , Elasticsearch , Presto , Druid , Hive ) 활용 경험.
+- 오픈소스 혹은 개발 커뮤니티 활동
+- AWS 의 다양한 프로덕트 사용 경험
+- Kafka , Kinesis 활용 경험
+- MSA 아키텍쳐 경험
+- Mongodb 또는 Mysql 사용 경험자
+- Java & Spring Framework 기반 백엔드 시스템 개발
+- 대용량 어플리케이션 시스템 개발 및 운영
+- Spring Framework, Spring Boot 개발 역량
+- JPA, MongoDB, Redis 개발 역량
+- 3년 이상의 실무 개발 경험
+- 우수한 문서 커뮤니케이션 능력
+- 강한 자율성과 책임감
+- 함께 성장하고 배우는 것에 가치를 두는 자세
+- MSA, Spring Cloud, Redis, MongoDB
 
 OAuth2, k8s, MongoDB
