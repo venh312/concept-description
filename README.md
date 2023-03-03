@@ -78,7 +78,10 @@
 
 ***
 
-Jvm 메모리 구조, GC, MySQL 엔진, 인덱스, 클러스터링 
+### Jvm 메모리 구조, GC, MySQL 엔진, 인덱스, 클러스터링 
+
+### Java JVM
+- java -> javac.exe -> bytecode -> class loader -> jvm area -> method area, heap area, stack area, pc register, native area
 
 - parallel gc, java8 default
 - parallel old gc
@@ -94,18 +97,11 @@ Jvm 메모리 구조, GC, MySQL 엔진, 인덱스, 클러스터링
 - AWS에 로그인 세션 공유, 마이크로서비스 구성, 도메인 연결, 배포, 서비스
 - 모니터링, 트래픽처리, API 가이드 문서? 구성에 관한? 인증에 대한 내용
 
-### React 기반의 프론트엔드 프레임워크를 사용하여, 컴포넌트 기반의 웹어플리케이션을 제작한다.
-팀 프로젝트로 진행한 결과물을 유지 보수하며 서비스를 운영하는 경험을 한다.
-
-✅ 단위 테스트, 통합 테스트, E2E 테스트를 진행하여 검증 가능한 코드를 작성한다.
-✅ 브라우저의 동작원리와 성능 요소를 이해하고, 네트워크 최적화, 메모리 최적화 과정을 진행한다.
-✅ 레거시 코드를 점진적으로 리팩토링하고 애플리케이션 설계 역량을 높인다.
+### ✅ 단위 테스트, 통합 테스트, E2E 테스트를 진행하여 검증 가능한 코드를 작성한다.
+### ✅ 브라우저의 동작원리와 성능 요소를 이해하고, 네트워크 최적화, 메모리 최적화 과정을 진행한다.
+### ✅ 레거시 코드를 점진적으로 리팩토링하고 애플리케이션 설계 역량을 높인다.
 
 ### 파이프라인: CI/CD를 예로 들면 빌드>테스트>릴리스>배포>검증과 같이 필요한 과정이 흐름에 따라 수행하는 것 
-
-
-### Java JVM
-- java -> javac.exe -> bytecode -> class loader -> jvm area -> method area, heap area, stack area, pc register, native area
 
 - Restful API 설계와 문서화
 - Git, Jira, Confluence wiki 사용능력
