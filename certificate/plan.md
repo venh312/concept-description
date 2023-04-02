@@ -46,8 +46,23 @@
   경과시간 / 사용률 / 응답시간 / 가용성
 </details>
 
+<details>
+<summary>UML의 관계</summary>
+  <b>연의 일실 포집</b><br/>
+  연관 / 의존 / 일반화 / 실체화 / 포함 / 집합
+</details>
 
+<details>
+<summary>애자일 선언문</summary>
+  <b>개변동고</b><br/>
+  개인과 상호작용 / 변화에 대응 / 동작하는 소프트웨어 / 고객과 협력
+</details>
 
+<details>
+<summary>XP 5가지 가치</summary>
+  <b>용단의 피존</b><br/>
+  용기 / 단순성 / 의사소통 / 피드백 / 존중
+</details>
 
 
 
