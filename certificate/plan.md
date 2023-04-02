@@ -23,19 +23,19 @@
 </details>
 
 <details>
-<summary>플랫폼 성능 특성 측정항목</summary>
-  <b>경사응가</b><br/>
-  경과시간 / 사용률 / 응답시간 / 가용성
+<summary>UML의 특징</summary>
+  <b>가구명문</b><br/>
+  가시화 / 구축 / 명세화 / 문서화 언어
 </details>
 
 <details>
-<summary>플랫폼 성능 특성 측정항목</summary>
-  <b>경사응가</b><br/>
-  경과시간 / 사용률 / 응답시간 / 가용성
+<summary>UML 구성 요소</summary>
+  <b>사관다</b><br/>
+  사물 / 관계 / 다이어그램
 </details>
 
 <details>
-<summary>플랫폼 성능 특성 측정항목</summary>
-  <b>경사응가</b><br/>
+<summary>정적 다이어그램</summary>
+  <b>클객 컴배 복패</b><br/>
   경과시간 / 사용률 / 응답시간 / 가용성
 </details>
