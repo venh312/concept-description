@@ -85,33 +85,440 @@
 <details>
 <summary>UI 표준 구성 요소</summary>
   <b>액정 스패조</b><br/>
-  전체적인 UX 원칙 / 정책 및 철학 / UI 스타일 가이드 / UI 패턴 모델 정의 / UI 표준 수립을 위한 조직 구성
+  전체적인 UX 원칙/ 정책 및 철학/ UI 스타일 가이드/ UI 패턴 모델 정의/ UI 표준 수립을 위한 조직 구성
 </details>
 
 <details>
-<summary>XP 5가지 가치</summary>
-  <b>용단의 피존</b><br/>
-  용기 / 단순성 / 의사소통 / 피드백 / 존중
+<summary>UI 설계 구분</summary>
+  <b>와스프</b><br/>
+  와이어 프레임 / 스토리 보드 / 프로토 타입
 </details>
 
 <details>
-<summary>XP 5가지 가치</summary>
-  <b>용단의 피존</b><br/>
-  용기 / 단순성 / 의사소통 / 피드백 / 존중
+<summary>UI 설계 프로세스</summary>
+  <b>문사 작컴 인디</b><br/>
+  문제 정의/ 사용자 모델 정의/ 작업 분석/ 컴퓨터 오브젝트 및 기능 정의/ 사용자 인터페이스 정의/ 디자인 평가
 </details>
 
 <details>
-<summary>XP 5가지 가치</summary>
-  <b>용단의 피존</b><br/>
-  용기 / 단순성 / 의사소통 / 피드백 / 존중
+<summary>UI 흐름 설계</summary>
+  <b>기입 유양</b><br/>
+  기능 작성 / 입력 요소 확인 / 유스케이스 설계 / 기능 및 양식 확인
 </details>
 
 <details>
-<summary>XP 5가지 가치</summary>
-  <b>용단의 피존</b><br/>
-  용기 / 단순성 / 의사소통 / 피드백 / 존중
+<summary>공통 모듈 원칙</summary>
+  <b>정명 완일추</b><br/>
+  정확성 / 명확성 / 완전성 / 일관성 / 추적성
 </details>
 
+<details>
+<summary>응집도의 유형</summary>
+  <b>우논시절 통순기</b><br/>
+  우연적 / 논리적 / 시간적 / 절차적 / 통신적 / 순차적 / 기능적 응집도
+</details>
+
+<details>
+<summary>결합도의 유형</summary>
+  <b>내공 외제 스자</b><br/>
+  내부 / 공통 / 외부 / 제어 / 스탬프 / 자료 결합도 
+</details>
+
+<details>
+<summary>HIPO 차트 종류</summary>
+  <b>가총세</b><br/>
+  가시적 도표 / 총체적 도표 / 세부적 도표
+</details>
+
+<details>
+<summary>소프트웨어 아키텍처 4+1 뷰</summary>
+  <b>유논프구배</b><br/>
+  유스케이스 뷰/ 논리 뷰/ 프로세스 뷰/ 구현 뷰/ 배포 뷰
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
+
+<details>
+<summary></summary>
+  <b></b><br/>
+  
+</details>
 
 
 
