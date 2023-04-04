@@ -133,13 +133,13 @@
 <details>
 <summary>소프트웨어 아키텍처 4+1 뷰</summary>
   <b>유논프구배</b><br/>
-  유스케이스 뷰/ 논리 뷰/ 프로세스 뷰/ 구현 뷰/ 배포 뷰
+  유스케이스 뷰/ 논리 뷰/ 프로세스 뷰/ 구현 뷰/ 배포 뷰   
 </details>
 
 <details>
-<summary></summary>
-  <b></b><br/>
-  
+<summary>아키텍처 비용 평가모델 종류</summary>
+  <b>SACAA (사카린)</b><br/>
+  SAAM / ATAM / CBAM / ADR/ ARID
 </details>
 
 <details>
