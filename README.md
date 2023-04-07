@@ -8,12 +8,13 @@
 ### - [DataBase](https://github.com/conf312/tech-concept/blob/master/Database.md)
 ### - [Network](https://github.com/conf312/tech-concept/blob/master/Network.md)
 ### - [OS](https://github.com/conf312/tech-concept/blob/master/OS.md)
-### - [로드밸런싱 (Load Balancing)](https://github.com/conf312/tech-concept/blob/master/Load%20Balancing.md)
+### - [로드밸런싱(Load Balancing)](https://github.com/conf312/tech-concept/blob/master/Load%20Balancing.md)
 ### - [JPA](https://github.com/conf312/tech-concept/blob/master/JPA.md)
 ### - [N+1, 1+N](https://github.com/conf312/tech-concept/blob/master/N%2B1.md)
 ### - [Session, Token, Rest API](https://github.com/conf312/tech-concept/blob/master/WEB.md)
 ### Maven, Gradle
 ### - [OAuth](https://github.com/conf312/tech-concept/blob/master/OAuth.md)
+### - [WEB](https://github.com/conf312/concept-description/blob/master/WEB.md)
 ### CDN
 ### Filter, Interceptor
 ### AES, DES, SHA
