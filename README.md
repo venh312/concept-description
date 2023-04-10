@@ -12,7 +12,7 @@
 ### - [JPA](https://github.com/conf312/tech-concept/blob/master/JPA.md)
 ### - [N+1, 1+N](https://github.com/conf312/tech-concept/blob/master/N%2B1.md)
 ### - [Session, Token, Rest API](https://github.com/conf312/tech-concept/blob/master/WEB.md)
-### Maven, Gradle
+### - [Maven, Gradle](https://github.com/conf312/concept-description/blob/master/Maven-Gradle.md)
 ### - [OAuth](https://github.com/conf312/tech-concept/blob/master/OAuth.md)
 ### - [WEB](https://github.com/conf312/concept-description/blob/master/WEB.md)
 ### CDN
