@@ -1,27 +1,27 @@
 ## spring-triangle
-### - [IOC (Inversion of Control) & DI (Dependency Injection)](https://github.com/conf312/spring-triangle/blob/master/IOC%26DI.md)
-### - [AOP (Aspect Oriented Programming)](https://github.com/conf312/spring-triangle/blob/master/AOP.md)
-### - [PSA (Portable Service Abstraction)](https://github.com/conf312/spring-triangle/blob/master/PSA.md)
+### - [IOC (Inversion of Control) & DI (Dependency Injection)](https://github.com/conf312/spring-triangle/blob/master/concept/IOC%26DI.md)
+### - [AOP (Aspect Oriented Programming)](https://github.com/conf312/spring-triangle/blob/master/concept/AOP.md)
+### - [PSA (Portable Service Abstraction)](https://github.com/conf312/spring-triangle/blob/master/concept/PSA.md)
 
-## 기술 개념 정리
-### - [SOLID](https://github.com/conf312/tech-concept/blob/master/SOLID.md)
-### - [DataBase](https://github.com/conf312/tech-concept/blob/master/Database.md)
-### - [Network](https://github.com/conf312/tech-concept/blob/master/Network.md)
-### - [OS](https://github.com/conf312/tech-concept/blob/master/OS.md)
-### - [로드밸런싱(Load Balancing)](https://github.com/conf312/tech-concept/blob/master/Load%20Balancing.md)
-### - [JPA](https://github.com/conf312/tech-concept/blob/master/JPA.md)
-### - [N+1, 1+N](https://github.com/conf312/tech-concept/blob/master/N%2B1.md)
-### - [Session, Token, Rest API](https://github.com/conf312/tech-concept/blob/master/WEB.md)
-### - [Maven, Gradle](https://github.com/conf312/concept-description/blob/master/Maven-Gradle.md)
-### - [OAuth](https://github.com/conf312/tech-concept/blob/master/OAuth.md)
-### - [WEB](https://github.com/conf312/concept-description/blob/master/WEB.md)
-### - [CDN](https://github.com/conf312/concept-description/blob/master/CDN.md)
+## 기술 개념 정리 
+### - [SOLID](https://github.com/conf312/tech-concept/blob/master/concept/SOLID.md)
+### - [DataBase](https://github.com/conf312/tech-concept/blob/master/concept/Database.md)
+### - [Network](https://github.com/conf312/tech-concept/blob/master/concept/Network.md)
+### - [OS](https://github.com/conf312/tech-concept/blob/master/concept/OS.md)
+### - [로드밸런싱(Load Balancing)](https://github.com/conf312/tech-concept/blob/master/concept/Load%20Balancing.md)
+### - [JPA](https://github.com/conf312/tech-concept/blob/master/concept/JPA.md)
+### - [N+1, 1+N](https://github.com/conf312/tech-concept/blob/master/concept/N%2B1.md)
+### - [Session, Token, Rest API](https://github.com/conf312/tech-concept/blob/master/concept/WEB.md)
+### - [Maven, Gradle](https://github.com/conf312/concept-description/blob/master/concept/Maven-Gradle.md)
+### - [OAuth](https://github.com/conf312/tech-concept/blob/master/concept/OAuth.md)
+### - [WEB](https://github.com/conf312/concept-description/blob/master/concept/WEB.md)
+### - [CDN](https://github.com/conf312/concept-description/blob/master/concept/CDN.md)
 ### Filter, Interceptor
 ### AES, DES, SHA
 ### SQL Injection
-### - [커버링 인덱스](https://github.com/conf312/concept-description/blob/master/Covering%20Index.md)
-### - [WebFlux](https://github.com/conf312/concept-description/blob/master/WebFlux.md)
-### - [Blocking, Non-Blocking](https://github.com/conf312/tech-concept/blob/master/Blocking.md)
+### - [커버링 인덱스](https://github.com/conf312/concept-description/blob/master/concept/Covering%20Index.md)
+### - [WebFlux](https://github.com/conf312/concept-description/blob/master/concept/WebFlux.md)
+### - [Blocking, Non-Blocking](https://github.com/conf312/tech-concept/blob/master/concept/Blocking.md)
 
 ## Question
 - 스택에서 다른 스택으로의 자원을 서로 공유할수 있는가요?
