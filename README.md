@@ -94,6 +94,6 @@
 - Kafka, Kinesis 활용 경험
 - 대용량 어플리케이션 시스템 개발 및 운영
 - JPA, MongoDB, Redis 개발 역량
-- MSA, Spring Cloud, Redis, MongoDB
+- MSA 아키텍처 사용 경험
 - 재난 상황 발생 시 Recovery 경험이나, 구축 경험
 - Docker 컨테이너 기반 사용 경험
