@@ -1,4 +1,4 @@
-## spring-triangle
+## Spring-triangle
 ### - [IOC (Inversion of Control) & DI (Dependency Injection)](https://github.com/conf312/spring-triangle/blob/master/concept/IOC%26DI.md)
 ### - [AOP (Aspect Oriented Programming)](https://github.com/conf312/spring-triangle/blob/master/concept/AOP.md)
 ### - [PSA (Portable Service Abstraction)](https://github.com/conf312/spring-triangle/blob/master/concept/PSA.md)
