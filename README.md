@@ -27,7 +27,7 @@
 #### ✅ 단위 테스트, 통합 테스트, E2E 테스트를 진행하여 검증 가능한 코드를 작성한다.
 #### ✅ 브라우저의 동작원리와 성능 요소를 이해하고, 네트워크 최적화, 메모리 최적화 과정을 진행한다.
 #### ✅ 레거시 코드를 점진적으로 리팩토링하고 애플리케이션 설계 역량을 높인다.
-#### ✅ 파이프라인: CI/CD를 예로 들면 빌드 > 테스트 > 릴리스 > 배포 > 검증과 같이 필요한 과정이 흐름에 따라 수행하는 것 
+
 - 스택에서 다른 스택으로의 자원을 서로 공유할수 있는가요?
 - 최소 스패닝트리란 무엇인가요?
 - Javascript에서 호출스택과 테스크큐의 관계는 무엇인가요?
@@ -80,12 +80,8 @@
 - Javascript에서 객체를 동결하는 함수는 무엇이며 이러한 경우 어떠한 필요성에 의해서 하게 되나요?
 - mysql에서 view를 사용할 경우 성능에 어떤 영향을 미치나요?
 
-***
-
-### Jvm 메모리 구조, GC, MySQL 엔진, 인덱스, 클러스터링 
-
 ### Java JVM
-- java -> javac.exe -> bytecode -> class loader -> jvm area -> method area, heap area, stack area, pc register, native area
+java -> javac.exe -> bytecode -> class loader -> jvm area -> method area, heap area, stack area, pc register, native area
 
 - parallel gc, java8 default
 - parallel old gc
@@ -98,24 +94,17 @@
 - Spring에 적용되는 디자인패턴에 대해 설명하시오.
 - JavaScript 스코프에 대해 아는게 있나? 있으면 설명해달라.
 - 마이크로서비스, Git, Redis, MongoDB, AWS
-- AWS에 로그인 세션 공유, 마이크로서비스 구성, 도메인 연결, 배포, 서비스
 - 모니터링, 트래픽처리, API 가이드 문서? 구성에 관한? 인증에 대한 내용
 - Restful API 설계와 문서화
 - Git, Jira, Confluence wiki 사용능력
-- 언어와 환경에 구애 받지 않고 가장 적합한 플랫폼을 기반으로 서비스를 구축할 수 있는 능력
 - OpenID, OAuth 에 대한 이해
 - 캐시, 비동기(Kafka , MQ), 동시성, 이벤트 에 대한 이해
 - 논-블로킹 (non-blocking) I/O 개발 경험
-- MSA 환경에서의 개발 경험
-- 빅데이터 환경 ( Spark , Elasticsearch , Presto , Druid , Hive ) 활용 경험.
+- 빅데이터 환경 ( Spark , Elasticsearch , Presto , Druid , Hive ) 활용 경험
 - 오픈소스 혹은 개발 커뮤니티 활동
 - AWS 의 다양한 프로덕트 사용 경험
-- Kafka , Kinesis 활용 경험
-- MSA 아키텍쳐 경험
-- Mongodb 또는 Mysql 사용 경험자
-- Java & Spring Framework 기반 백엔드 시스템 개발
+- Kafka, Kinesis 활용 경험
 - 대용량 어플리케이션 시스템 개발 및 운영
-- Spring Framework, Spring Boot 개발 역량
 - JPA, MongoDB, Redis 개발 역량
 - 우수한 문서 커뮤니케이션 능력
 - 강한 자율성과 책임감
