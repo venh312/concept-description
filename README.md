@@ -110,3 +110,4 @@ java -> javac.exe -> bytecode -> class loader -> jvm area -> method area, heap a
 - 강한 자율성과 책임감
 - 함께 성장하고 배우는 것에 가치를 두는 자세
 - MSA, Spring Cloud, Redis, MongoDB
+- 재난 상황 발생 시 Recovery 경험이나, 구축 경험
