@@ -71,7 +71,7 @@ Hibernate: select users0_.team_id as team_id1_1_0_, users0_.users_id as users_id
 ### N+1 문제를 해결하기 위해 다음과 같은 방법들이 사용됩니다:
 
 - Eager 로딩 대신 Lazy 로딩 사용: 기본적으로 JPA는 @ManyToOne, @OneToOne 등의 관계에서 Eager 로딩을 사용합니다. 이 경우 N+1 문제가 발생할 가능성이 높습니다. 따라서 FetchType.LAZY 옵션을 사용하여 Lazy 로딩을 활용하면, 실제로 필요한 시점에 자식 엔티티를 로딩하게 할 수 있습니다.
-- 페치 조인 (Fetch Join): JPA의 페치 조인은 JPQL에서 JOIN FETCH 구문을 사용하여 연관된 엔티티를 함께 로딩하는 방법입니다. 이를 사용하면 부모 엔티티와 함께 자식 엔티티도 한 번의 쿼리로 로딩할 수 있습니다.
+- [패치 조인 (Fetch Join)](https://github.com/conf312/concept-description/blob/master/concept/JPA/N%2B1/%EB%B0%A9%EB%B2%95-FETCH%20JOIN.md): JPA의 페치 조인은 JPQL에서 JOIN FETCH 구문을 사용하여 연관된 엔티티를 함께 로딩하는 방법입니다. 이를 사용하면 부모 엔티티와 함께 자식 엔티티도 한 번의 쿼리로 로딩할 수 있습니다.
 - [DTO 사용](https://github.com/conf312/concept-description/blob/master/concept/JPA/N%2B1/%EB%B0%A9%EB%B2%95-DTO.md): 필요한 데이터만 조회하여 DTO(Data Transfer Object)로 변환하는 방법도 있습니다. DTO는 엔티티의 일부 속성만 포함하므로 불필요한 데이터 조회를 줄일 수 있습니다.
 - Batch 사이즈 설정: Hibernate에서는 @BatchSize 어노테이션을 사용하여 일괄 처리를 할 수 있습니다. 이를 통해 부모 엔티티의 리스트를 한 번에 조회하고, 지정한 크기만큼의 자식 엔티티를 로딩할 수 있습니다.
 
