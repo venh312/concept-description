@@ -54,6 +54,7 @@ ex) 클라우드 프론트 `https://site.cloudfront.net/logo.png` 아카마이 `
 
 
 
-
+### 출처
+- 대규모 시스템 설계 기초
 
 
