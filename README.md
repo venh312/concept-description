@@ -4,6 +4,7 @@
 ### - [PSA (Portable Service Abstraction)](https://github.com/conf312/spring-triangle/blob/master/concept/PSA.md)
 
 ## 기술 개념 정리 
+### - [시스템 설계 기초](https://github.com/conf312/concept-description/tree/master/concept/%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EA%B3%84)
 ### - [SOLID](https://github.com/conf312/tech-concept/blob/master/concept/SOLID.md)
 ### - [DataBase](https://github.com/conf312/tech-concept/blob/master/concept/Database.md)
 ### - [Network](https://github.com/conf312/tech-concept/blob/master/concept/Network.md)
