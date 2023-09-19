@@ -19,3 +19,17 @@
    - `MaxRequestWorkers` 설정은 동시에 실행되는 Apache 프로세스와 각 프로세스 내의 스레드 및 이벤트 처리 프로세스 수를 제한하는 역할을 합니다. 설정된 값은 서버가 동시에 처리할 수 있는 클라이언트 요청 수를 결정합니다.
 
 `mpm_prefork_module`, `mpm_worker_module`, `mpm_event_module` 중 어떤 모듈을 사용할지는 Apache의 운영 환경과 성능 요구 사항에 따라 다릅니다. 각 모듈은 장단점을 가지고 있으며, 서버의 하드웨어 및 애플리케이션의 특성에 따라 선택됩니다. `MaxRequestWorkers` 설정은 선택한 MPM 모듈에 따라 서버의 성능을 효과적으로 조절하는 데 사용됩니다.
+
+
+## Worker
+```shell
+<IfModule worker.c>
+StartServer 16				   # 기동 시 최초 프로세스 수
+MaxRequestWorkers 1024		# 최대 동시 접속자 수
+MinSpareThreads 512			# 최소 유지 스레드 수
+MaxSpareThreads 1024		   # 최대 유지 스레드 수
+ThreadsPerChild 64			# 프로세스 당 스레드 수
+ThreadLimit 1024			   # 스레드 제한 수
+MaxConnectionsPerChild 0	# 스레드 요청 처리량
+</IfModule>
+```
