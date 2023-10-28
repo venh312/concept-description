@@ -96,3 +96,4 @@
 - JPA, MongoDB, Redis 개발 역량
 - MSA, Spring Cloud, Redis, MongoDB
 - 재난 상황 발생 시 Recovery 경험이나, 구축 경험
+- Docker 컨테이너 기반 사용 경험
