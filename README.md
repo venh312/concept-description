@@ -1,7 +1,7 @@
 ## Spring-triangle
-### - [IOC (Inversion of Control) & DI (Dependency Injection)](https://github.com/conf312/spring-triangle/blob/master/concept/IOC%26DI.md)
-### - [AOP (Aspect Oriented Programming)](https://github.com/conf312/spring-triangle/blob/master/concept/AOP.md)
-### - [PSA (Portable Service Abstraction)](https://github.com/conf312/spring-triangle/blob/master/concept/PSA.md)
+### - [IOC (Inversion of Control) & DI (Dependency Injection)](https://github.com/conf312/concept-description/blob/master/concept/Spring/IOC%26DI.md)
+### - [AOP (Aspect Oriented Programming)](https://github.com/conf312/concept-description/blob/master/concept/Spring/AOP.md)
+### - [PSA (Portable Service Abstraction)](https://github.com/conf312/concept-description/blob/master/concept/Spring/PSA.md)
 
 ## 기술 개념 정리 
 ### - [시스템 설계 기초](https://github.com/conf312/concept-description/tree/master/concept/%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EA%B3%84)
