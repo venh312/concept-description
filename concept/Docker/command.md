@@ -53,7 +53,7 @@ $ docker ps
 ```
 $ docker exec 1b4a24ab3ec8 ls /usr/share/nginx/html
 ```
-컨테이너 ID(1b4a24ab3ec8)의 /usr/share/nginx/html 경로에서 ls 명령어를 실행한다.
+컨테이너 ID(1b4a24ab3ec8)의 `/usr/share/nginx/html` 경로에서 `ls` 명령어를 실행한다.
 
 
 
