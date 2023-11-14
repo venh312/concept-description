@@ -55,6 +55,37 @@ $ docker exec 1b4a24ab3ec8 ls /usr/share/nginx/html
 ```
 컨테이너 ID(1b4a24ab3ec8)의 `/usr/share/nginx/html` 경로에서 `ls` 명령어를 실행한다.
 
+### 볼륨 생성하기
+```
+$ docker volume create nginx-volume
+```
+
+### 볼륨 전체 조회하기
+```
+$ docker volume ls
+```
+
+### 볼륨 상세 조회하기
+```
+$ docker volume inspect nginx-volume
+```
+```
+[
+    {
+        "CreatedAt": "2023-11-14T22:35:22Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/nginx-volume/_data",
+        "Name": "nginx-volume",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+```
+`nginx-volume` 이름으로 생성한 볼륨으로 컨테이너 실행 시 바인드 마운트 처럼 사용할 수 있으며, 볼륨은 빈 디렉토리를 덮어 쓰지 않고 컨테이너 디렉토리 파일을 보존한다.
+
+
+
 
 
 
