@@ -33,7 +33,7 @@ $ docker history nginx:latest
 ```
 
 ## 📌 컨네이너
-### 컨테이너 단순히 실행하기
+### 컨테이너 실행하기
 ```
 $ docker run -d -p 8080:80 --name nginx-exposed -v /root/html:/usr/share/nginx/html --restart always nginx
 ```
@@ -44,6 +44,21 @@ $ docker run -d -p 8080:80 --name nginx-exposed -v /root/html:/usr/share/nginx/h
 - --restart always: 컨테이너의 재시작과 관련된 정책을 의미하는 옵션으로 오류가 발생하거나 중지되는 경우 즉시 재시작하거나, 컨테이너를 자동으로 시작하도록 설정할 수 있다.
   - 기본값은 `no`
 
+### 컨테이너 중지하기
+```
+$ docker stop nginx-exposed
+```
+
+### nginx 이미지를 사용하는 모든 컨테이너 ID 조회 (-q 옵션)
+```
+$ docker ps -q -f ancestor=nginx
+```
+
+### nginx 이미지를 사용하는 모든 컨테이너 중지
+```
+$ docker stop $(docker ps -q -f ancestor=nginx)
+```
+
 ### 컨테이너 상태 확인
 ```
 $ docker ps
@@ -53,7 +68,12 @@ $ docker ps
 ```
 $ docker exec 1b4a24ab3ec8 ls /usr/share/nginx/html
 ```
-컨테이너 ID(1b4a24ab3ec8)의 `/usr/share/nginx/html` 경로에서 `ls` 명령어를 실행한다.
+컨테이너 ID(1b4a24ab3ec8), 또는 이름도 가능)의 `/usr/share/nginx/html` 경로에서 `ls` 명령어를 실행한다.
+
+### 컨테이너 삭제하기
+```
+$ docker rm 컨테이너ID
+```
 
 ### 볼륨 생성하기
 ```
@@ -84,7 +104,40 @@ $ docker volume inspect nginx-volume
 ```
 `nginx-volume` 이름으로 생성한 볼륨으로 컨테이너 실행 시 바인드 마운트 처럼 사용할 수 있으며, 볼륨은 빈 디렉토리를 덮어 쓰지 않고 컨테이너 디렉토리 파일을 보존한다.
 
+## 📌 컨테이너 이미지 빌드하기 
+소스 코드가 자바로 작성되어 있는 구성에서 작성한 내용입니다.
 
+### 패키지 구조
+- DockerFile
+- mvnw
+- pom.xml
+- src
+
+아래 과정은 DockerFile에 작성되어있는 내용으로 Docker build 되며, `chmod 700 mvnw`, `./mvnw clean package` 선 작업으로 target 폴더에 jar 파일이
+존재하는 상태에서 작성되었습니다.
+```
+$ docker build -t basic-img .
+```
+-t(tag)는 만들어질 이미지를 의미하고, .(dot, 점)은 이미지에 원하는 내용을 추가하거나 변경하는데 필요하나 작업공간을 현재 디렉토리로 지정한다는 의미이다.
+
+### 잠깐, 여기서 DockerFile 이란?
+빌드용 DSL(Domain-Specific Language, 도메인 특화 언어)로 작성된 파일이다.
+
+#### DockerFile 작성 예
+```
+FROM openjdk:8 -- 1
+LABEL description="Echo IP Java Application" -- 2
+EXPOSE 60431 -- 3
+COPY ./target/app-in-host.jar /opt/app-in-image.jar -- 4
+WORKDIR /opt -- 5
+ENTRYPOINT [ "java", "-jar", "app-in-image.jar" ] -- 6
+```
+#### 1: openjdk:8 이미지 내부에서 컨테이너 이미지를 빌드한다. 여기서 openjdk를 기초 이미지로 사용한다.
+#### 2: 이미지에 부가적인 설명을 위한 레이블을 추가할 때 사용된다.
+#### 3: 컨테이너로 구동할 때 어떤 포트를 사용하는지 알려준다. ❗️ 주의, 컨테이너를 구동할 떄 자동으로 해당 포트를 호스트 포트와 연결하지 않는다. 단지 정보를 제공할 뿐이다.
+#### 4: 호스트에서 새로 생성하는 컨테이너 이미지로 필요한 파일을 복사한다. app-in-host.jar 파일을 이미지의 /opt/app-in-image.jar 로 복사한다.
+#### 5: 이미지의 현재 작업 위치를 opt로 변경한다.
+#### 6: 대괄호 안에 든 명령을 실행한다. 콤마로 구분된 문자열 중 첫 번째 문자열을 실행할 명령어고, 두 번째 문자열부터 명령어를 실행할 때 추가하는 옵션이다. 여기서는 java -jar app-in-image.jar 가 실행된다는 의미이다.
 
 
 
