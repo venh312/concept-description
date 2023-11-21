@@ -162,6 +162,15 @@ $ kubectl create deployment failure1 --image=basic-img
 - failure1: failure1 라는 이름으로 지정
 ErrorImagePull과 ImagePullBackOff 가 발생하는 이유는 이미지가 호스트에 존재함에도 기본 설정에 따라 외부(도커 허브)에서 내려 받으려고 시도하기 때문이다.
 
+### 디플로이먼트 생성 (내부 이미지 이용)
+```
+$ kubectl create deployment failure2 --dry-run=client -o yaml --image=basic-img > failure2.yaml
+```
+
+### 수정한 yaml 파일을 디플로이먼트에 적용
+```
+$ kubectl apply -f failure2.yaml
+```
 
 ### 파드의 상태 및 변화 확인하기
 ```
