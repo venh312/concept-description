@@ -57,3 +57,9 @@
 (Kubernetes, Docker Swarm, AWS의 ECS< 하시코프의 Nomad, Mesos의 Marathone 등)
 
 
+### 쿠버네티스에서 프로그램을 사용하는 과정
+1) Docker Build (애플리케이션 코드를 내려 받아 도커 컨테이너 이미지로 빌드)
+2) Docker Push (컨테이너 이미지를 레지스트리(저장소)에 등록)
+3) kubectl create (레지스트리에 등록된 이미지를 기바느로 쿠버네티스 오브젝트 생성)
+4) kubectl expose (쿠버네티스 오브젝트를 외부에서 접속할 수 있도록 서비스 형태로 노출)
+
