@@ -172,11 +172,15 @@ $ kubectl create deployment failure2 --dry-run=client -o yaml --image=basic-img 
 $ kubectl apply -f failure2.yaml
 ```
 
-### 파드의 상태 및 변화 확인하기
+### pod의 상태 및 변화 확인하기
 ```
 kubectl get pods -w
 ```
 
+### pod에 포트포워딩
+```
+$ kubectl port-foward pod/{pod 명} {포트}:{대상 포트}
+```
 
 
 
