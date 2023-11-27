@@ -31,3 +31,9 @@ $ vagrant ssh
 ```
 $ vagrant provision
 ```
+
+### 베이그런트 상태 확인 및 삭제
+```
+$ vagrant global-status --prune
+$ vagrant destory -f
+```
