@@ -154,6 +154,16 @@ $ kubectl get nodes -o wide
 ```
 `CONTAINER-RUNTIME` 부분을 확인한다.
 
+### 디플로이먼트 조회
+```
+$ kubectl get deployments
+```
+
+### 서비스 조회
+```
+$ kubectl get services
+```
+
 ### 디플로이먼트 생성
 ```
 $ kubectl create deployment failure1 --image=basic-img
