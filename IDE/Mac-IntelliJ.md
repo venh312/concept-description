@@ -27,3 +27,16 @@ Keymap -> select file in project view 검색 후 단축 키 지정 (command + ES
 - 선택 영역 번역 `Control + command + u`
 - 번역기 미니 창 생성 `Control + command + i`
 
+### 괄호 닫으면서 세미콜론 자동완성
+`Shift + command + Enter`
+
+### 메서드 파라미터 보기
+`command + p`
+
+
+
+
+
+
+
+
