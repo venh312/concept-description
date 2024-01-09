@@ -64,6 +64,16 @@ $ docker stop $(docker ps -q -f ancestor=nginx)
 $ docker ps
 ```
 
+### 컨테이너 shell 접속하기
+```
+$ docker exec -it 컨테이너ID /bin/bash
+```
+
+### 컨테이너 shell root계정 접속하기
+```
+$ docker exec -u 0 -it 컨테이너ID /bin/bash
+```
+
 ### 컨테이너 내부 확인하기
 ```
 $ docker exec 1b4a24ab3ec8 ls /usr/share/nginx/html
