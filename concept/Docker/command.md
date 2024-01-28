@@ -62,6 +62,7 @@ $ docker stop $(docker ps -q -f ancestor=nginx)
 ### 컨테이너 상태 확인
 ```
 $ docker ps
+$ docker ps -a
 ```
 
 ### 컨테이너 shell 접속하기
