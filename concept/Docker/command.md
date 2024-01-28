@@ -44,9 +44,14 @@ $ docker run -d -p 8080:80 --name nginx-exposed -v /root/html:/usr/share/nginx/h
 - --restart always: 컨테이너의 재시작과 관련된 정책을 의미하는 옵션으로 오류가 발생하거나 중지되는 경우 즉시 재시작하거나, 컨테이너를 자동으로 시작하도록 설정할 수 있다.
   - 기본값은 `no`
 
-### 컨테이너 중지하기
+### 컨테이너 중지,종료하기
 ```
 $ docker stop nginx-exposed
+```
+
+### 컨테이너 모두 중지,종료하기
+```
+docker stop $(docker ps -aq)
 ```
 
 ### nginx 이미지를 사용하는 모든 컨테이너 ID 조회 (-q 옵션)
