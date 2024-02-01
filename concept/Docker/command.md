@@ -46,7 +46,7 @@ $ docker run -d -p 8080:80 --name nginx-exposed -v /root/html:/usr/share/nginx/h
 
 ### 컨테이너 모두 실행하기
 ```
-docker start $(docker ps -aq)
+$ docker start $(docker ps -aq)
 ```
 
 ### 컨테이너 중지,종료하기
@@ -56,7 +56,7 @@ $ docker stop nginx-exposed
 
 ### 컨테이너 모두 중지,종료하기
 ```
-docker stop $(docker ps -aq)
+$ docker stop $(docker ps -aq)
 ```
 
 ### nginx 이미지를 사용하는 모든 컨테이너 ID 조회 (-q 옵션)
