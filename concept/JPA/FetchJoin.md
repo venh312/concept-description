@@ -7,23 +7,28 @@ fetch join은 연관된 엔티티들을 함께 로드하여 즉시 데이터베�
 지연로딩이 설정되어 있어도 fetch join을 하면 한번에 데이터를 조회합니다.
 
 ### 예제
-#### Order, Customer Entity
+#### Member, Team Entity
 ```java
 @Entity
-public class Order {
+public class Member {
     @Id
     private Long id;
+    private String name;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Customer customer;
+    @JoinColumn(name="team_id")
+    private Team team;
 
     // other fields, getters and setters
 }
 
 @Entity
-public class Customer {
+public class Team {
     @Id
+    @Column(name="team_id")
     private Long id;
+
+    private String name;
 
     // other fields, getters and setters
 }
@@ -31,17 +36,17 @@ public class Customer {
 
 #### JPQL
 ```java
-String jpql = "SELECT o FROM Order o JOIN FETCH o.customer";
+String jpql = "SELECT m FROM Member m JOIN FETCH m.team";
 
 List<Order> orders = entityManager.createQuery(jpql, Order.class).getResultList();
 ```
 
-위의 JPQL 쿼리는 Order 엔티티와 Customer 엔티티를 함께 로드합니다. 이때 JOIN FETCH 구문을 사용하여 fetch join을 수행하고 있습니다. 이렇게 함으로써 추가적인 쿼리 없이 연관된 엔티티를 함께 가져올 수 있습니다.
+위의 JPQL 쿼리는 Member 엔티티와 Team 엔티티를 함께 로드합니다. 이때 JOIN FETCH 구문을 사용하여 fetch join을 수행하고 있습니다. 이렇게 함으로써 추가적인 쿼리 없이 연관된 엔티티를 함께 가져올 수 있습니다.
 
 
 #### 실제 실행되는 SQL
 ```
-SELECT o.*, c.* FROM order o INNER JOIN customer c ON o.id = c.order_id
+SELECT m.*, t.* FROM Member m INNER JOIN Team t ON m.team_id = t.id
 ```
 
 fetch join을 사용하여 연관 참조 필드를 조회하면 묵시적으로 inner join(내부조인)을 수행합니다. 외부 조인(outer)은 명시적으로만 수행됩니다.
