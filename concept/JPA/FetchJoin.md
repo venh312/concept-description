@@ -46,7 +46,7 @@ List<Order> orders = entityManager.createQuery(jpql, Order.class).getResultList(
 
 #### 실제 실행되는 SQL
 ```
-SELECT m.*, t.* FROM Member m INNER JOIN Team t ON m.team_id = t.id
+SELECT m.*, t.* FROM Member m INNER JOIN Team t
 ```
 
 fetch join을 사용하여 연관 참조 필드를 조회하면 묵시적으로 inner join(내부조인)을 수행합니다. 외부 조인(outer)은 명시적으로만 수행됩니다.
