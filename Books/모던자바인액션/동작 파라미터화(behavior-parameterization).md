@@ -96,6 +96,31 @@ public static List<Apple> filterApple(List<Apple> inventory, Color color, int we
 List<Apple> greenApples = filterApples(inventory, GREEN, 0, true);
 List<Apple> heavyApples = filterApples(inventory, null, 150, false);
 ```
+true 와 false는 뭘 의미하는 걸까? 게다가 앞으로 요구사항이 바뀌었을때 유연하게 대응할 수도 없다.
+
+한 걸음 물러서서 전체를 보자. 우리의 선택 조건을 다음처럼 결정할 수 있다. 사과의 어떤 속성에 기초해서 불리언값을 반환(예를 들어 사과가 녹색인가? 150그램 이상인가?)하는 방법이 있다. 참 또는 거짓을 반환하는 함수를 `프레디케이트`라고 한다. `선택 조건을 결정하는 인터페이스`를 정의하자.
+
+```java
+public interface ApplePredicate {
+
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
