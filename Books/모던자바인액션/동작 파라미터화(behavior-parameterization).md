@@ -98,19 +98,62 @@ List<Apple> heavyApples = filterApples(inventory, null, 150, false);
 ```
 true 와 false는 뭘 의미하는 걸까? 게다가 앞으로 요구사항이 바뀌었을때 유연하게 대응할 수도 없다.
 
-한 걸음 물러서서 전체를 보자. 우리의 선택 조건을 다음처럼 결정할 수 있다. 사과의 어떤 속성에 기초해서 불리언값을 반환(예를 들어 사과가 녹색인가? 150그램 이상인가?)하는 방법이 있다. 참 또는 거짓을 반환하는 함수를 `프레디케이트`라고 한다. `선택 조건을 결정하는 인터페이스`를 정의하자.
+<br/>
 
+한 걸음 물러서서 전체를 보자. 우리의 선택 조건을 다음처럼 결정할 수 있다. 사과의 어떤 속성에 기초해서 불리언값을 반환(예를 들어 사과가 녹색인가? 150그램 이상인가?)하는 방법이 있다. 참 또는 거짓을 반환하는 함수를 `프레디케이트`라고 한다. `선택 조건을 결정하는 인터페이스`를 정의하자.
 ```java
 public interface ApplePredicate {
-
+  boolean test(Apple apple);
 }
 ```
+<br/>
+다음 예제처럼 다양한 선택 조건을 대표하는 여러 버전의 ApplePredicate를 정의할 수 있다.
+```java
+// 무거운 사과만 선택
+public class AppleHeavyWeightPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return apple.getWeight() > 150;
+  }
+}
+```
+<br/>
+```java
+// 녹색 사과만 선택
+public class AppleGreenColorPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return GREEN.equals(apple.getColor());
+  }
+}
+```
+ApplePredicate는 사과 선택 전략을 캡슐화했다. 조건에 따라 filter 메서드가 다르게 동작할 것이라고 예상할 수 있다. 이를 `전략 디자인 패턴(strategy design pattern)` 이라고 부른다. 
 
+<br/>
 
+### 전략 디자인 패턴(strategy design pattern)
+각 알고리즘(전략이라 불리는)을 캡슐화하는 알고리즘 패밀리는 정의해둔 다음에 런타임에 알고리즘을 선택하는 기법이다. 위 예제에서는 **ApplePredicate가 알고리즘 패밀리**고 **AppleHeavyWeightPredicate와 AppleGreenColorPredicate가 전략**이다.
 
+<br/>
 
+그런데 ApplePredicate는 어떻게 다양한 동작을 수행할 수 있을까? filterApples에서 ApplePredicate 객체를 받아 애플의 조건을 검사하도록 메서드를 수정해야 한다. 이렇게 **동작 파라미터화**, 즉 메서드가 다양한 동작(또는 전략)을 받아서 내부적으로 다양한 동작을 수행할 수 있다.
 
+<br/>
 
+이제 filter 메서드가 ApplePredicate 객체를 인수로 받도록 고치자. 이렇게 하면 filterApples 메서드 내부에서 컬렉션을 반복하는 로직과 컬렉션의 각 요소에 적용할 동작(우리 예제에서는 프레디케이트)을 분리할수 있다는 점에서 소프트웨어 엔지니어링적으로 큰 이득을 얻는다.
+
+<br/>
+
+### 2.2.1 네 번째 시도 : 추상적 조건으로 필터링
+```java
+public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) {
+  List<Apple> result = new ArrayList<>();
+  for (Apple apple : inventory) {
+    if (p.test(apple)) {
+      result.add(apple);
+    }
+  }
+}
+```
+첫 번째 코드에 비해 더 유연한 코드를 얻었으며 동시에 가독성도 좋아졌을 뿐 아니라 사용하기도 쉬워졌다. 이제 필요한 대로 다양한 ApplePredicate를 만들어서 filterApples 메서드로 전달할 수 있다.
 
 
 
