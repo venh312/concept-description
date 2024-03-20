@@ -108,6 +108,7 @@ public interface ApplePredicate {
 ```
 <br/>
 다음 예제처럼 다양한 선택 조건을 대표하는 여러 버전의 ApplePredicate를 정의할 수 있다.
+
 ```java
 // 무거운 사과만 선택
 public class AppleHeavyWeightPredicate implements ApplePredicate {
@@ -116,7 +117,9 @@ public class AppleHeavyWeightPredicate implements ApplePredicate {
   }
 }
 ```
+
 <br/>
+
 ```java
 // 녹색 사과만 선택
 public class AppleGreenColorPredicate implements ApplePredicate {
@@ -132,15 +135,9 @@ ApplePredicate는 사과 선택 전략을 캡슐화했다. 조건에 따라 filt
 ### 전략 디자인 패턴(strategy design pattern)
 각 알고리즘(전략이라 불리는)을 캡슐화하는 알고리즘 패밀리는 정의해둔 다음에 런타임에 알고리즘을 선택하는 기법이다. 위 예제에서는 **ApplePredicate가 알고리즘 패밀리**고 **AppleHeavyWeightPredicate와 AppleGreenColorPredicate가 전략**이다.
 
-<br/>
-
 그런데 ApplePredicate는 어떻게 다양한 동작을 수행할 수 있을까? filterApples에서 ApplePredicate 객체를 받아 애플의 조건을 검사하도록 메서드를 수정해야 한다. 이렇게 **동작 파라미터화**, 즉 메서드가 다양한 동작(또는 전략)을 받아서 내부적으로 다양한 동작을 수행할 수 있다.
 
-<br/>
-
 이제 filter 메서드가 ApplePredicate 객체를 인수로 받도록 고치자. 이렇게 하면 filterApples 메서드 내부에서 컬렉션을 반복하는 로직과 컬렉션의 각 요소에 적용할 동작(우리 예제에서는 프레디케이트)을 분리할수 있다는 점에서 소프트웨어 엔지니어링적으로 큰 이득을 얻는다.
-
-<br/>
 
 ### 2.2.1 네 번째 시도 : 추상적 조건으로 필터링
 ```java
