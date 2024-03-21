@@ -152,15 +152,64 @@ public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) 
 ```
 첫 번째 코드에 비해 더 유연한 코드를 얻었으며 동시에 가독성도 좋아졌을 뿐 아니라 사용하기도 쉬워졌다. 이제 필요한 대로 다양한 ApplePredicate를 만들어서 filterApples 메서드로 전달할 수 있다.
 
+만약 150그램이 넘는 빨간 사과를 검색해달라고 부탁하면 ApplePredicate를 적절하게 구현하는 클래스만 만들만 된다.
 
+```java
+public class AppleRedAndHeavyPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return RED.eqauls(apple.getColor()) && apple.getWeight() > 150;
+  }
+}
+```
+```java
+List<Apple> redAndHeavyApples = filterApples(inventory, new AppleRedAndHeavyPredicate());
+```
 
+하지만 filterApples 메서드의 새로운 동작을 정의하는 것이 test 메서드다. 안타깝게도 메서드는 객체만 인수로 받으므로 test 메서드를 ApplePredicate 객체로 감싸서 전달해야 한다. test 메서드를 구현하는 객체를 이용해서 불리언 표현식 등을 전달할 수 있으므로 이는 `코드를 전달`할 수 있는 것이나 다름없다.
 
+다음 2.3절에서는 람다를 이용해서 여러개의 ApplePredicate 클래스를 정의하지 않고도 "red.eqauls(apple.getColor()) && apple.getWeight() > 150 같은 표현식을 filterApples 메서드로 전달하는 방법을 설명한다.
 
+### 2.3 복잡한 과정 간소화
+#### 예제 2-1 동작 파라미터화 : 프레디케이트로 사과 필터링
+```java
+// 무거운 사과 선택
+public class AppleHeavyWeightPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return apple.getWeight() > 150;
+  }
+}
 
+// 녹색 사과 선택
+public class AppleGreenColorPredicate implements ApplePredicate {
+  public boolean test(Apple apple) {
+    return GREEN.equals(apple.getColor());
+  }
+}
 
+public class FilteringApples {
+  public static void main(String...args) {
+    List<Apple> inventory = Arrays.asList(new Apple(80, GREEN),
+                                          new Apple(155, GREEN),
+                                          new Apple(120, RED));
+    // 결과: 155그램의 사과 한개를 포함한다.
+    List<Apple> heavyApples = filterApples(inventory, new AppleHeavyWeightPredicate());
+    // 결과: 녹색 사과 두 개를 포함한다.
+    List<Apple> greenApples = filterApples(inventory, new AppleGreenColorPredicate());
+  }
 
-
-
+  public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) {
+    List<Apple> result = new ArrayList<>();
+    for (Apple apple : inventory) {
+      if (p.test(apple)) {
+        result.add(apple);
+      }
+    }
+    return result;
+  }
+}
+```
+로직과 관련 없는 코드가 많이 추가 되었다. 자바는 클래스의 선언과 인스턴스화를 동시에 수행할 수 있도록 익명 클래스(anonymous class)라는 기법을 제공한다.
+(익명클래스를 자바8에서 추가된 람다 표현식으로 더 가독성 있는 코드를 구현할 수 있다.)
 
 
 
