@@ -208,8 +208,55 @@ public class FilteringApples {
   }
 }
 ```
-로직과 관련 없는 코드가 많이 추가 되었다. 자바는 클래스의 선언과 인스턴스화를 동시에 수행할 수 있도록 익명 클래스(anonymous class)라는 기법을 제공한다.
+로직과 관련 없는 코드가 많이 추가 되었다. 자바는 클래스의 선언과 인스턴스화를 동시에 수행할 수 있도록 `익명 클래스(anonymous class)`라는 기법을 제공한다.
 (익명클래스를 자바8에서 추가된 람다 표현식으로 더 가독성 있는 코드를 구현할 수 있다.)
+
+### 2.3.1 익명 클래스
+익명클래스는 자바의 지역 클래스와 비슷한 개념이다. 말 그대로 이름이 없는 클래스로 클래스 선언과 인스턴스화를 동시에 할 수 있다. 즉, 즉석에서 필요한 구현을 만들어서 사용할 수 있다.
+
+### 2.3.2 다섯 번째 시도 : 익명 클래스 사용
+다음은 익명 클래스를 이용해서 ApplePreicate를 구현하는 객체를 만드는 방법으로 필터링 예제를 다시 구현한 코드다.
+```java
+List<Apple> redApples = filterApple(inventory, new ApplePredicate() { // filterApples 메서드의 동작을 직접 파라미터화
+  public boolean test(Apple apple) {
+    return RED.eqauls(apple.getColor());
+  }
+});
+```
+
+익명 클래스로도 아직 부족한 점이 있다. 첫째, 아래 표현한 부분에서 알 수 있는것처럼 익명 클래스는 여전히 많은 공간을 차지한다.
+```java
+List<Apple> redApples = filterApples(inventory, new ApplePredicate() {
+  public boolean test(Apple a) {
+    ...
+  }
+}
+```
+
+둘째, 많은 프로그래머가 익명 클래스의 사용에 익숙하지 않다. 예를 들어 퀴즈2-2는 많은 프로그래머를 곤경에 빠뜨리는 고전 자바 문제다.
+```java
+public class MeaningOfThis {
+  public final int value = 4;
+  public void doIt() {
+    int value = 6;
+    Runnable r = new Runnable() {
+      public final int value = 5;
+      public void run() {
+        int value = 10;
+        System.out.println(this.value);
+      }
+    }
+  }
+}
+```
+정답 : 5 (코드에서 this는 MeaningOfThis가 아니라 Runnable을 참조하므로..)
+
+
+
+
+
+
+
 
 
 
