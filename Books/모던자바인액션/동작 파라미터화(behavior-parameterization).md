@@ -251,9 +251,66 @@ public class MeaningOfThis {
 ```
 정답 : 5 (코드에서 this는 MeaningOfThis가 아니라 Runnable을 참조하므로..)
 
+### 2.3.3 여섯 번째 시도 : 람다 표현식 사용
+자바 8의 람다 표현식을 이용하여 위 예제 코드를 다음처럼 간단하게 재구현할 수 있다.
+```java
+List<Apple> result = filterApples(inventory, (Apple apple) -> RED.equals(apple.getColor()));
+```
+이전 보다 훨씬 간단해지고 더 잘 설명하는 코드가 되었다.
+
+### 2.3.4 일곱 번째 시도 : 리스트 형식으로 추상화
+```java
+public interface Predicate<T> {
+  boolean test(T t);
+}
+```
+
+```java
+public static <T> List<T> filter(List<T> list, Predicate<T> p) { // 형식 파라미터 등장
+  List<T> result = new ArrayList<>();
+  for (T e : list) {
+    if (p.test(e)) {
+      result.add(e);
+    }
+  }
+}
+```
+
+이제 바나나, 오렌지, 정수, 문자열 등의 리스트에 필터 메서드를 사용할 수 있다. 다음은 람다 표현식을 사용한 예제다.
+```java
+List<Apple> redApples = filter(inventory, (Apple apple) -> RED.equals(apple.getColor()));
+
+List<Integer> evenNumbers = filter(numbers, (Integer i) -> i % 2 == 0);
+```
+훨씬 멋진 코드다 되었다. 유연성과 간결함이라는 두 마리 토끼를 모두 잡을 수 있었다. 자바 8이 아니면 불가능한 일이다.
 
 
+### 2.4 실전 예제
+지금까지 동작 파라미터화가 변화하는 요구사항에 쉽게 적응하는 유용한 패턴임을 확인했다. 동작 파라미터화 패턴은 동작을 (한 조각의 코드로) 캡슐화한 다음에 메서드로 전달해서 메서드의 동작을 파라미터화 한다.
 
+### 2.4.1 Comparator로 정렬하기
+컬렉션 정렬은 반복되는 프로그래밍 작업이다. 예를 들어 처음에는 농부가 무게를 기준으로 목록에서 사과를 정렬하고 싶다고 말할 것이다. 하지만 마음을 바꿔 색을 기준으로 사과를 정렬하고 싶어질수 있다. 자바 8의 List에는 sort 메서드가 포함되어 있다. (물론 Collections.sort도 존재한다.) 다음과 같은 인터페이스를 갖는 `java.util.Comparator` 객체를 이용해서 sort의 동작을 파라미터화 할 수 있다.
+
+```java
+public interface Comparator<T> {
+  int compare(T o1, T o2);
+}
+```
+
+Comparator를 구현해서 sort 메서드의 동작을 다양화할 수 있다. 예를 들어 익명클래스를 이용해서 무게가 적은 순서로 목록에서 사과를 정렬할 수 있다.
+```java
+inventory.sort(new Comparator<Apple>() {
+  public int compare(Apple a1, Apple a2) {
+    return a1.getWeight().compareTo(a2.getWeight());
+  }
+}
+```
+농부의 요구사항이 바뀌면 새로운 요구사항에 맞는 Comparator를 만들어 sort 메서드에 전달할 수 있다.
+
+#### 람다 표현식을 이용하면 더 간단하게 코드를 구현할 수 있다.
+```java
+inventory.sort((Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight()));
+```
 
 
 
