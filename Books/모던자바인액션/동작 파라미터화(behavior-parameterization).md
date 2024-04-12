@@ -312,6 +312,60 @@ inventory.sort(new Comparator<Apple>() {
 inventory.sort((Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight()));
 ```
 
+### 2.4.2 Runnable로 코드 블록 실행하기
+자바 스레드를 이용하면 병렬로 코드 블록을 실행할 수 있다.
+#### 자바8부터 지원하는 람다 표현식을 이용하면 다음처럼 스레드 코드를 구현할 수 있다.
+```java
+Thread t = new Thread(() -> System.out.println("Hello world"));
+```
+
+### 2.4.3 Callable을 결과로 반환하기
+`ExecutorService` 인터페이스는 태스크 제출과 실행 과정의 연관성을 끊어준다. `ExecutorService`를 이용하면 태스크를 스레드 풀로 보내고 결과를 `Future`로 저장할 수 있다는 점이 스레드와 Runnable을 이용하는 방식과는 다르다. Callable 인터페이스를 이용해 결과를 반환하는 태스크를 만든다는 사실만 기억하자. 
+
+이 방식은 Runnable의 업그레이드 버전이라고 생각할 수 있다.
+```java
+// java.util.concurrent.Callable
+public interface Callable<V> {
+  V call();
+}
+```
+
+아래 코드에서 볼 수 있듯이 실행 서비스에 태스크를 제출해서 위 코드를 활용할 수 있다. 다음 예제는 태스크를 실행하는 스레드의 이름을 반환한다.
+```java
+ExecutorService executorService = Executors.newCachedThreadPool();
+Future<String> threadName = executorService.submit(new Callable<String>(){
+  @Override
+  public String call() throws Exception {
+    return Thread.currentThread().getName();
+  }
+});
+```
+
+람다를 이용하면 다음처럼 코드를 줄일 수 있다.
+```java
+Future<String> threadName = executorService.submit(() -> Thread.currentThread().getName());
+```
+
+### 2.5 마치며
+- 동작 파라미터화에서는 메서드 내부적으로 다양한 동작을 수행할 수 있도록 코드를 메서드 인수로 전달한다.
+- 동작 파라미터화를 이용하면 변화하는 요구사항에 더 잘 대응할 수 있는 코드를 구현할 수 있으며 나중에 엔지니어링 비용을 줄일 수 있다.
+- 코드 전달 기법을 이용하면 동작을 메서드의 인수로 전달할 수 있다.
+- 자바 API의 많은 메서드는 정렬, 스레드, GUI 처리 등을 포함한 다양한 동작으로 파라미터화할 수 있다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
