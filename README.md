@@ -88,7 +88,7 @@
 - OpenID, OAuth 에 대한 이해
 - 캐시, 비동기(Kafka , MQ), 동시성, 이벤트 에 대한 이해
 - 논-블로킹 (non-blocking) I/O 개발 경험
-- 빅데이터 환경 ( Spark , Elasticsearch , Presto , Druid , Hive ) 활용 경험
+- 빅데이터 환경 (Spark, Elasticsearch, Presto, Druid, Hive) 활용 경험
 - 오픈소스 혹은 개발 커뮤니티 활동
 - AWS 의 다양한 프로덕트 사용 경험
 - 메시지큐(Kafka) 활용 경험
