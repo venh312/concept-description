@@ -1,3 +1,5 @@
+![oauth2 0-process](https://github.com/venh312/concept-description/assets/13326651/bc38d22f-5c94-421f-9f50-adfdccdb604d)
+
 ## OAuth - 다양한 플랫폼 환경에서 권한 부여를 위한 산업 표준 프로토콜
 인터넷 사용자들이 비밀번호를 제공하지 않고 다른 웹사이트 상의 자신들의 정보에 대해 웹사이트나 애플리케이션의 접근 권한을 부여할 수 있는 공통적인 수단으로서 사용되는, 접근 위임을 위한 개방형 표준
 
@@ -5,7 +7,6 @@
 - 인증만 하는 것은 openID
 
 ## OAuth 구성 요소
-
 ### Resource Owner	
 - 웹 서비스를 이용하려는 사용자, 자원(개인정보)을 소유하는 자
 ### Client
