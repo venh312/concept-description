@@ -1,4 +1,4 @@
-### 🌈 개발 환경 설정
+### 🌈 개발 환경 설정 - P.19
 #### 1. Android Studio Install
 https://developer.android.com/studio?hl=ko
 
@@ -13,3 +13,6 @@ vi ~/.zshrc
 # 아래 내용 작성 아래 경로에 Flutter SDK가 위치해야 한다. (문서)
 export PATH=$HOME/Documents/flutter/bin:$PATH
 ```
+
+### 파이어베이스 추가하기 - P.63
+https://firebase.google.com
